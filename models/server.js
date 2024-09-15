@@ -1,4 +1,5 @@
 const express = require('express')
+require('dotenv').config();
 
 class Server {
   constructor () {
@@ -14,6 +15,7 @@ class Server {
 
   rutas () {
     this.app.use('/api/v1/empleados', require('../routes/empleados')) // ejemplo
+    this.app.use('/api/v1/noticias', require('../routes/noticias')) // Montecino
     // integrante2 mangas
     // integrante3 santicchia
     // integrante4 rust

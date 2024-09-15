@@ -2,8 +2,7 @@ const axios = require('axios')
 const { request, response } = require('express')
 
 const getEmpleados = (req = request, res = response) => {
-  const { lastname = '' } = req.query
-  console.log(lastname)
+  const { lastname = '' } = req.query 
   const filtro = (lastname) ? `?lastname=${lastname}` : ''
 
   axios.get(`https://66e63b2317055714e5892b35.mockapi.io/api/v1/empleados/empleados${filtro}`)
