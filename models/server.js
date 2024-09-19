@@ -18,12 +18,12 @@ class Server {
     this.app.use('/api/v1/noticias', require('../routes/noticias')) // Montecino
     // integrante2 mangas
     // integrante3 santicchia
-    // integrante4 rust
+    this.app.use('/api/v1/canciones', require('../routes/canciones'))// integrante4 rust
   }
 
   listen () {
     this.app.listen(this.port, () => {
-      console.log(`La API esta escuchando en el this.PORT ${this.port}`)
+      console.log(`La API esta escuchando en el this.PORT http://localhost:${this.port}`)
     })
   }
 }
