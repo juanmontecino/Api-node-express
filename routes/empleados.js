@@ -4,6 +4,6 @@ const { getEmpleados, getEmpleado } = require('../controllers/empleados')
 const rutas = Router()
 
 rutas.get('/', getEmpleados)
-rutas.get('/:idEmpleado', getEmpleado)
+rutas.get('/:idEmpleadoAswl', getEmpleado)
 
 module.exports = rutas
