@@ -17,7 +17,7 @@ class Server {
     this.app.use('/api/v1/empleados', require('../routes/empleados')) // ejemplo
     this.app.use('/api/v1/noticias', require('../routes/noticias')) // Montecino
     // integrante2 mangas
-    // integrante3 santicchia
+    this.app.use('/api/v1/libros', require('../routes/libros'))//Santicchia
     // integrante4 rust
   }
 
